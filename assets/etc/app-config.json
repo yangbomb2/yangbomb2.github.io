@@ -1,0 +1,17 @@
+{
+	"project": "Google UXE",
+	"author": "Min yang",
+	"meta": {
+		"title": "this is google exercise project for min yang",
+		"keywords": "google, uxe",
+		"description":"TODO"
+	},
+	"locale": "en",
+	"pages": {
+		"components": {
+			"title": "UI components",
+			"subtitle": "todo",
+			"abstract": "todo"
+		}
+	}
+}
