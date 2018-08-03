@@ -13,6 +13,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
+	<!-- ie10/11 window phone gesture related-->
+	<meta name="msapplication-tap-highlight" content="no" />
+
 	<title></title>
 
 	<meta name="title" content="this is google exercise project for min yang">
@@ -91,13 +94,36 @@
 		</div>
 	</section>
 
+	<!-- image detail-->
+	<section class="component image-detail" data-name="image-detail">
+	
+		<div class="image-detail__inner">
+	
+			<!--image carousel-->
+			<div class="image-detail__strip">
+			</div>
+	
+			<!--UI controls-->
+			<div class="image-detail__control">
+				<button class="ui-btn--icon js-backward">
+					<i class="material-icons">arrow_back_ios</i>
+				</button>
+				<button class="ui-btn--icon js-forward">
+					<i class="material-icons">arrow_forward_ios</i>
+				</button>
+			</div>
+	
+		</div>
+	
+	</section>
+
 	<!-- tool bar-->
 	<aside class="component tool-bar" data-name="tool-bar">
 		<div class="f-row">
 			<div class="f-col">
 				<!--message/comment-->
 				<button class="ui-btn--icon plus" data-mode="plus">
-					<i class="material-icons">message</i>
+					<i class="material-icons">plus_one</i>
 				</button>
 			</div>
 	
