@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--
+		*************************************
+		Design and programming by Min yang
+		Web: http://hi-kyungminyang.com/
+		Email: yangbomb2@gmail.com
+		*************************************
+	-->
+  <meta charset="utf-8" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <!-- ie10/11 window phone gesture related-->
+  <meta name="msapplication-tap-highlight" content="no" />
+
+  <title></title>
+
+  <meta name="title" content="this is google exercise project for min yang">
+  <meta name="keywords" content="google, uxe">
+  <meta name="description" content="TODO">
+
+  <meta property="og:site_name" content="">
+  <meta property="og:title" content="this is google exercise project for min yang">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en-US">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="TODO">
+
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="" />
+
+  <!-- google icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700" rel="preload" as="style" onload="this.rel='stylesheet'">
+  <!-- style -->
+  <link href="/styles/style.css" rel="stylesheet">
+
+</head>
+
+<body id="js-root" class="intro main-page" data-page="main" data-base-url="" data-locale="en">
+
+  <main class="main">
+
+    <!--  header-->
+    <header class="component mobile-header" data-name="mobile-header">
+      <div class="f-row">
+        <div class="f-col left">
+          &nbsp;
+        </div>
+        <div class="f-col center">
+          <span class="letter-masker ">
+            <span class="masker">
+              <span class="letter top"></span>
+              <span class="letter bottom"></span>
+            </span>
+            <span class="letter base"></span>
+          </span>
+        </div>
+        <div class="f-col right">
+          <!--close-->
+          <a href="/" class="ui-btn--icon close-btn js-route" aria-label="header close button" aria-disabled="false" tabindex="0">
+            <i class="material-icons">close</i>
+            <span class="ui-btn-label"></span>
+          </a>
+
+          <!--image search-->
+          <button class="ui-btn--icon search-btn js-search-toggle" title="header search trigger button">
+            <i class="material-icons">search</i>
+            <span class="ui-btn-label"></span>
+          </button>
+
+        </div>
+      </div>
+
+    </header>
+
+    <!-- image thumbnails-->
+    <section class="component image-thumbnails" data-name="image-thumbnails">
+      <ul class="image-list">
+        <!--CSR-->
+      </ul>
+
+      <!-- load more -->
+      <div class="load-more-wrapper">
+        <button class="ui-btn ui-btn--box js-load-more">More images</button>
+      </div>
+    </section>
+
+    <!-- image detail-->
+    <section class="component image-detail" data-name="image-detail">
+
+      <div class="image-detail__inner">
+
+        <!--image carousel-->
+        <div class="image-detail__strip">
+        </div>
+
+        <!--UI controls-->
+        <div class="image-detail__control">
+          <button class="ui-btn--icon js-backward">
+            <i class="material-icons">arrow_back_ios</i>
+          </button>
+          <button class="ui-btn--icon js-forward">
+            <i class="material-icons">arrow_forward_ios</i>
+          </button>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- tool bar-->
+    <aside class="component tool-bar" data-name="tool-bar">
+      <div class="f-row">
+        <div class="f-col">
+          <!--message/comment-->
+          <button class="ui-btn--icon plus" data-mode="plus">
+            <i class="material-icons">plus_one</i>
+          </button>
+        </div>
+
+        <div class="f-col">
+          <!--message/comment-->
+          <button class="ui-btn--icon comment" data-mode="comment">
+            <i class="material-icons">message</i>
+          </button>
+        </div>
+        <div class="f-col">
+          <!--add-->
+          <button class="ui-btn--icon add" data-mode="add">
+            <i class="material-icons bold">add</i>
+          </button>
+        </div>
+        <div class="f-col">
+          <!--share-->
+          <div class="ui-component ui-balloon down" data-name="ui-balloon">
+            <ul class="ui-balloon__items">
+              <!-- This part is for iteration -->
+              <li class="ui-balloon__item" data-id="0" data-label="Share on facebook">
+
+                <a class="ui-btn ui-btn--text small" href="#fb" aria-label="Share on facebook" aria-disabled="false" tabindex="0">
+                  Share on facebook
+                </a>
+
+              </li>
+              <!-- This part is for iteration -->
+              <li class="ui-balloon__item" data-id="1" data-label="Tweet">
+
+                <a class="ui-btn ui-btn--text small" href="#fb" aria-label="Tweet" aria-disabled="false" tabindex="0">
+                  Tweet
+                </a>
+
+              </li>
+              <!-- This part is for iteration -->
+              <li class="ui-balloon__item" data-id="2" data-label="Download">
+
+                <a class="ui-btn ui-btn--text small" href="#fb" aria-label="Download" aria-disabled="false" tabindex="0">
+                  Download
+                  <i class="material-icons">arrow_downward</i>
+                </a>
+
+              </li>
+            </ul>
+          </div>
+          <!--share-->
+
+          <!--add-->
+          <button class="ui-btn--icon share" data-mode="share">
+            <i class="material-icons flip-x">reply</i>
+          </button>
+        </div>
+      </div>
+
+
+    </aside>
+
+    <!-- app loader-->
+    <div class="loader app-loader">
+      <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.0" width="64px" height="64px" viewBox="0 0 128 128" xml:space="preserve">
+        <g>
+          <path d="M75.4 126.63a11.43 11.43 0 0 1-2.1-22.65 40.9 40.9 0 0 0 30.5-30.6 11.4 11.4 0 1 1 22.27 4.87h.02a63.77 63.77 0 0 1-47.8 48.05v-.02a11.38 11.38 0 0 1-2.93.37z"
+            fill="#007fc3" fill-opacity="1" />
+          <animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64" dur="1200ms" repeatCount="indefinite"></animateTransform>
+        </g>
+      </svg>
+    </div>
+
+    <!-- app search overlay-->
+    <!--search view overay-->
+    <section class="component search-overlay" data-name="search-overlay">
+      <div class="search-overlay-bg"></div>
+      <aside class="search-sidebar">
+
+        <div class="top">
+          <!-- back button-->
+          <button class="ui-btn--icon search-back-btn">
+            <i class="material-icons">arrow_back_ios</i>
+          </button>
+          <form action="/search" id="search-form" autocomplete="off">
+            <!--search bar-->
+            <div class="ui-component ui-input search" data-type="text" data-name="ui-input">
+              <a href="#" role="button" class="ui-btn--icon before">
+                <i class="material-icons">search</i>
+              </a>
+
+              <input type="text" id="image-search" name="Search" placeholder="search
+									image" autocomplete="off">
+              <label for="image-search">Search</label>
+
+              <a href="#" role="button" class="ui-btn--icon after">
+                <i class="material-icons">close</i>
+              </a>
+            </div>
+          </form>
+        </div>
+
+        <!-- search result-->
+        <div class="search-results">
+          <h5 class="search-sugestion-title">
+            Popular keywords
+          </h5>
+          <!--popular suggestions-->
+          <ul class="popular-suggestions">
+            <!-- CSR-->
+          </ul>
+        </div>
+        <div class="search-results">
+          <h5 class="search-sugestion-title">
+            Related keywords with
+            <strong class="current-keyword">&nbsp;</strong>
+            <div class="loader search-loader">
+              <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.0" width="64px" height="64px" viewBox="0 0 128 128" xml:space="preserve">
+                <g>
+                  <path d="M75.4 126.63a11.43 11.43 0 0 1-2.1-22.65 40.9 40.9 0 0 0 30.5-30.6 11.4 11.4 0 1 1 22.27 4.87h.02a63.77 63.77 0 0 1-47.8 48.05v-.02a11.38 11.38 0 0 1-2.93.37z"
+                    fill="#007fc3" fill-opacity="1" />
+                  <animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64" dur="1200ms" repeatCount="indefinite"></animateTransform>
+                </g>
+              </svg>
+            </div>
+          </h5>
+          <!--search related suggestions-->
+          <ul class="search-suggestions">
+            <!-- CSR-->
+          </ul>
+        </div>
+
+      </aside>
+    </section>
+
+    <!-- app modal-->
+    <div class="app-modal ">
+      <div class="app-modal__inner">
+        <div class="app-modal__content"></div>
+
+        <!--close-->
+        <button class="ui-btn--icon close-btn">
+          <i class="material-icons">close</i>
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- script -->
+  <script src="/scripts/dependencies-bundle.js"></script>
+  <script src="/scripts/bundle.js"></script>
+
+</body>
+
+</html>
