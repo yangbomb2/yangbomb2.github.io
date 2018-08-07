@@ -37,9 +37,9 @@
 	<meta name="twitter:image" content="" />
 
 	<!-- google icons-->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="preload" as="style" onload="this.rel='stylesheet'">
 	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700" rel="preload" as="style" onload="this.rel='stylesheet'">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,500,700,900" rel="preload" as="style" onload="this.rel='stylesheet'">
 	<!-- style -->
 	<link href="/styles/style.css" rel="stylesheet">
 
@@ -174,7 +174,7 @@
 					<span class="ui-btn-label">pause</span>
 				</button>
 
-				<button class="ui-btn--icon svg active">
+				<button class="ui-btn--icon svg reverse">
 					<div class="svg-sprite" style="background-image:url(assets/images/ui/play-to-pause.svg);"></div>
 					<span class="ui-btn-label">play</span>
 					<span class="ui-btn-label">pause</span>
@@ -187,7 +187,7 @@
 					<span class="ui-btn-label">unfavorite</span>
 				</button>
 
-				<button class="ui-btn--icon svg active">
+				<button class="ui-btn--icon svg reverse">
 					<div class="svg-sprite" style="background-image:url(assets/images/ui/favorite.svg);"></div>
 					<span class="ui-btn-label">favorite</span>
 					<span class="ui-btn-label">unfavorite</span>
@@ -209,25 +209,30 @@
 							<!-- This part is for iteration -->
 							<li class="ui-balloon__item" data-id="0" data-label="Share on facebook">
 				
-								<a class="ui-btn ui-btn--text small" href="#fb" aria-label="Share on facebook" aria-disabled="false" tabindex="0">
-									Share on facebook
+								<a class="ui-btn ui-btn--text small" href="" target=""  aria-label="Share on facebook" aria-disabled="false"
+								 tabindex="0">
+										Share on facebook
+										
 								</a>
 				
 							</li>
 							<!-- This part is for iteration -->
 							<li class="ui-balloon__item" data-id="1" data-label="Tweet">
 				
-								<a class="ui-btn ui-btn--text small" href="#fb" aria-label="Tweet" aria-disabled="false" tabindex="0">
-									Tweet
+								<a class="ui-btn ui-btn--text small" href="" target=""  aria-label="Tweet" aria-disabled="false"
+								 tabindex="0">
+										Tweet
+										
 								</a>
 				
 							</li>
 							<!-- This part is for iteration -->
 							<li class="ui-balloon__item" data-id="2" data-label="Download">
 				
-								<a class="ui-btn ui-btn--text small" href="#fb" aria-label="Download" aria-disabled="false" tabindex="0">
-									Download
-									<i class="material-icons">arrow_downward</i>
+								<a class="ui-btn ui-btn--text small" href="" target=""  aria-label="Download" aria-disabled="false"
+								 tabindex="0">
+										Download
+										<i class="material-icons">arrow_downward</i>
 								</a>
 				
 							</li>
@@ -239,16 +244,20 @@
 							<!-- This part is for iteration -->
 							<li class="ui-balloon__item" data-id="0" data-label="Normal link1">
 				
-								<a class="ui-btn ui-btn--text small" href="" aria-label="Normal link1" aria-disabled="false" tabindex="0">
-									Normal link1
+								<a class="ui-btn ui-btn--text small" href="" target=""  aria-label="Normal link1" aria-disabled="false"
+								 tabindex="0">
+										Normal link1
+										
 								</a>
 				
 							</li>
 							<!-- This part is for iteration -->
 							<li class="ui-balloon__item" data-id="1" data-label="Normal link2">
 				
-								<a class="ui-btn ui-btn--text small" href="" aria-label="Normal link2" aria-disabled="false" tabindex="0">
-									Normal link2
+								<a class="ui-btn ui-btn--text small" href="" target=""  aria-label="Normal link2" aria-disabled="false"
+								 tabindex="0">
+										Normal link2
+										
 								</a>
 				
 							</li>
@@ -266,7 +275,7 @@
 				<div class="ui-component ui-input " data-type="text" data-name="ui-input">
 				
 					<input type="text" id="test-input" name="Comment" placeholder="-" autocomplete="">
-					<label for="test-input">Comment</label>
+					<label for="test-input">Comments</label>
 				
 				</div>
 
@@ -357,8 +366,8 @@
 	</main>
 
 	<!-- script -->
-	<script src="/scripts/dependencies-bundle.js"></script>
-	<script src="/scripts/bundle.js"></script>
+	<script src="/scripts/dependencies-bundle.js" defer></script>
+	<script src="/scripts/bundle.js" defer></script>
 
 </body>
 </html>
