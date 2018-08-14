@@ -57,6 +57,53 @@
 
 	</main>
 
+	<!--intro password-->
+	<div class="intro" id="app-intro">
+		<div class="intro__inner">
+			<form action="/auto" id="intro-form" method="POST" autocomplete="off">
+				<fieldset>
+					<legend>Min's GUX</legend>
+					<div class="input-wrapper">
+						<!--ui input-->
+						<div class="ui-component ui-input small" data-type="text" data-name="ui-input">
+						
+							<input type="text"
+								id="user-name"
+								name="UserName"
+								placeholder="Your name"
+								autocomplete="off"
+								value=""
+								required>
+						
+							<label for="user-name">Name</label>
+						
+						</div>
+	
+						<!--ui input-->
+						<div class="ui-component ui-input small" data-type="text" data-name="ui-input">
+						
+							<input type="password"
+								id="password"
+								name="Password"
+								placeholder="password"
+								autocomplete="off"
+								value=""
+								required>
+						
+							<label for="password">Password</label>
+						
+						</div>
+	
+						<!--submit-->
+						<button class="ui-btn ui-btn--box" title="enter">
+							Go
+						</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
 	<!-- script -->
 	<script src="/scripts/dependencies-bundle.js" defer></script>
 	<script src="/scripts/bundle.js" defer></script>

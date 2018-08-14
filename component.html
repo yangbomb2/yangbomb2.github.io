@@ -169,13 +169,13 @@
 
 				<!--play-pause(default) -->
 				<button class="ui-btn--icon svg">
-					<div class="svg-sprite" style="background-image:url(assets/images/ui/play-to-pause.svg);"></div>
+					<div class="svg-sprite" style="background-image:url(../assets/images/ui/play-to-pause.svg);"></div>
 					<span class="ui-btn-label">play</span>
 					<span class="ui-btn-label">pause</span>
 				</button>
 
 				<button class="ui-btn--icon svg reverse">
-					<div class="svg-sprite" style="background-image:url(assets/images/ui/play-to-pause.svg);"></div>
+					<div class="svg-sprite" style="background-image:url(../assets/images/ui/play-to-pause.svg);"></div>
 					<span class="ui-btn-label">play</span>
 					<span class="ui-btn-label">pause</span>
 				</button>
@@ -274,7 +274,14 @@
 			<div class="ui-wrapper">
 				<div class="ui-component ui-input " data-type="text" data-name="ui-input">
 				
-					<input type="text" id="test-input" name="Comment" placeholder="-" autocomplete="">
+					<input type=""
+						id="test-input"
+						name="Comment"
+						placeholder="-"
+						autocomplete=""
+						value=""
+						>
+				
 					<label for="test-input">Comments</label>
 				
 				</div>
@@ -285,7 +292,14 @@
 						<i class="material-icons">search</i>
 					</a>
 				
-					<input type="text" id="image-search" name="Search" placeholder="search image" autocomplete="">
+					<input type=""
+						id="image-search"
+						name="Search"
+						placeholder="search image"
+						autocomplete=""
+						value=""
+						>
+				
 					<label for="image-search">Search</label>
 				
 					<a href="#" role="button" class="ui-btn--icon after">
@@ -364,6 +378,53 @@
 
 </section>
 	</main>
+
+	<!--intro password-->
+	<div class="intro" id="app-intro">
+		<div class="intro__inner">
+			<form action="/auto" id="intro-form" method="POST" autocomplete="off">
+				<fieldset>
+					<legend>Min's GUX</legend>
+					<div class="input-wrapper">
+						<!--ui input-->
+						<div class="ui-component ui-input small" data-type="text" data-name="ui-input">
+						
+							<input type="text"
+								id="user-name"
+								name="UserName"
+								placeholder="Your name"
+								autocomplete="off"
+								value=""
+								required>
+						
+							<label for="user-name">Name</label>
+						
+						</div>
+	
+						<!--ui input-->
+						<div class="ui-component ui-input small" data-type="text" data-name="ui-input">
+						
+							<input type="password"
+								id="password"
+								name="Password"
+								placeholder="password"
+								autocomplete="off"
+								value=""
+								required>
+						
+							<label for="password">Password</label>
+						
+						</div>
+	
+						<!--submit-->
+						<button class="ui-btn ui-btn--box" title="enter">
+							Go
+						</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
 
 	<!-- script -->
 	<script src="/scripts/dependencies-bundle.js" defer></script>

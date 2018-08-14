@@ -45,15 +45,18 @@
 
 </head>
 
-<body id="js-root" class="intro main-page" data-page="main" data-base-url="" data-locale="en">
+<body id="js-root" class="main-page" data-page="main" data-base-url="" data-locale="en">
 
 	<main class="main">
 
-	<!--  header-->
+	<!-- header-->
 	<header class="component mobile-header" data-name="mobile-header">
 		<div class="f-row">
 			<div class="f-col left">
-				&nbsp;
+				<div class="sponsor">
+					<span>Photos by</span>
+					<a class="ui-btn ui-btn--text small" href="https://unsplash.com/" target="_blank">Unsplash</a>
+				</div>
 			</div>
 			<div class="f-col center">
 				<span class="letter-masker ">
@@ -119,103 +122,154 @@
 		<!--CSR-->
 	</aside>
 
-	<!-- app user collection -->
+	<!-- user collection -->
 	<!--global user collection component-->
 	<div class="component user-collection" data-name="user-collection">
 	
 		<div class="ui-component ui-balloon no-tip" data-name="ui-balloon">
 	
-			<div class="user-collection__top">
-				<!-- new collection add form-->
-				<form action="/collection" autocomplete="off">
+			<div class="masker">
 	
-					<div class="ui-wrapper">
+				<!-- collection overview-->
+				<div class="user-collection__overview">
+					<div class="user-collection__top">
+						<!-- new collection add form-->
+						<form action="/collection" id="user-collection-form" method="POST" autocomplete="off">
+							<div class="input-wrapper">
 	
-						<!--ui input-->
-						<div class="ui-component ui-input user-collection__input" data-type="text" data-name="ui-input">
-						
-							<input type="text" id="collection-name" name="CollectionName" placeholder="new collection name" autocomplete="off">
-							<label for="collection-name">new collection</label>
-						
+								<!--add/submit-->
+								<button class="ui-btn ui-btn--icon" data-collection-id="new" title="new collection">
+									<i class="material-icons">add</i>
+								</button>
+	
+								<!--ui input-->
+								<div class="ui-component ui-input user-collection__input" data-type="text" data-name="ui-input">
+								
+									<input type="text"
+										id="collection-name"
+										name="CollectionName"
+										placeholder="collection name"
+										autocomplete="off"
+										value=""
+										>
+								
+									<label for="collection-name">create new collection</label>
+								
+								</div>
+							</div>
+	
+						</form>
+	
+						<!-- ui-loader-->
+						<div class="loader user-collection__loader">
+							<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+							 version="1.0" width="64px" height="64px" viewBox="0 0 128 128" xml:space="preserve">
+								<g>
+									<path d="M75.4 126.63a11.43 11.43 0 0 1-2.1-22.65 40.9 40.9 0 0 0 30.5-30.6 11.4 11.4 0 1 1 22.27 4.87h.02a63.77 63.77 0 0 1-47.8 48.05v-.02a11.38 11.38 0 0 1-2.93.37z"
+									 fill="#007fc3" fill-opacity="1" />
+									<animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64" dur="1200ms" repeatCount="indefinite"></animateTransform>
+								</g>
+							</svg>
 						</div>
-						<!--submit-->
-						<button class="ui-btn ui-btn--icon" data-collection-id="new" title="New collection">
-							<i class="material-icons">add</i>
-						</button>
-	
 					</div>
 	
-				</form>
+					<ul class="ui-balloon__items user-collection__items">
+						<!-- csr-->
+					</ul>
+				</div>
 	
-				<!-- ui-loader-->
-				<div class="loader user-collection__loader">
-					<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-					 version="1.0" width="64px" height="64px" viewBox="0 0 128 128" xml:space="preserve">
-						<g>
-							<path d="M75.4 126.63a11.43 11.43 0 0 1-2.1-22.65 40.9 40.9 0 0 0 30.5-30.6 11.4 11.4 0 1 1 22.27 4.87h.02a63.77 63.77 0 0 1-47.8 48.05v-.02a11.38 11.38 0 0 1-2.93.37z"
-							 fill="#007fc3" fill-opacity="1" />
-							<animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64" dur="1200ms" repeatCount="indefinite"></animateTransform>
-						</g>
-					</svg>
+				<!-- collection detail-->
+				<div class="user-collection__detail">
+					<!-- csr-->
 				</div>
 			</div>
 	
-			<ul class="ui-balloon__items user-collection__items">
-				<!-- csr-->
-			</ul>
-	
-			<!--close-->
-			<button class="ui-btn--icon close-btn" title="user collection close">
+			<!--back-->
+			<button class="ui-btn--icon back-btn" title="user collection back">
 				<i class="material-icons">arrow_back</i>
 			</button>
 		</div>
 	
+	
 	</div>
 
-	<!-- app search overlay-->
-	<!--search view overay-->
-	<section class="component search-overlay" data-name="search-overlay">
-		<div class="search-overlay-bg"></div>
-		<aside class="search-sidebar">
+	<!-- user comment -->
+	<!--global user collection component-->
+	<div class="component user-comment" data-name="user-comment">
 	
-			<div class="top">
-				<form action="/search" id="search-form" autocomplete="off">
-					<!--search bar-->
-					<div class="ui-component ui-input search" data-type="text" data-name="ui-input">
-						<a href="#" role="button" class="ui-btn--icon before">
-							<i class="material-icons">search</i>
-						</a>
-					
-						<input type="text" id="image-search" name="Search" placeholder="search images" autocomplete="off">
-						<label for="image-search">Search</label>
-					
-						<a href="#" role="button" class="ui-btn--icon after">
-							<i class="material-icons">close</i>
-						</a>
+		<div class="ui-component ui-balloon no-tip" data-name="ui-balloon">
+	
+			<!-- collection overview-->
+			<div class="user-comment__top">
+				<!-- new collection add form-->
+				<form action="/collection" id="user-comment-form" method="POST" autocomplete="off">
+					<div class="input-wrapper">
+						<!--ui input-->
+						<div class="ui-component ui-input user-comment__input" data-type="text" data-name="ui-input">
+						
+							<input type="text"
+								id="user-commment-input"
+								name="UserComment"
+								placeholder="add a comment"
+								autocomplete="off"
+								value=""
+								>
+						
+							<label for="user-commment-input">add new comment</label>
+						
+						</div>
+	
+						<!--submit-->
+						<button class="ui-btn ui-btn--text" data-comment-id="new" title="new comment">
+							Add
+						</button>
 					</div>
 				</form>
 	
-				<!-- back button-->
-				<button class="ui-btn--icon search-back-btn">
-					<i class="material-icons">arrow_back</i>
-				</button>
+				<!-- buttons -->
+				<div class="ui-wrapper">
+					<button class="ui-btn ui-btn--text small js-show-comments" title="view more comments">
+						View&nbsp;
+						<span class="total-comments">6</span>&nbsp;comments
+					</button>
+					<button href="#" class="ui-btn ui-btn--text small js-hide-comments" title="view more comments">
+						Hide comments
+					</button>
+					<!-- ui-loader-->
+					<div class="loader user-collection__loader">
+						<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+						 version="1.0" width="64px" height="64px" viewBox="0 0 128 128" xml:space="preserve">
+							<g>
+								<path d="M75.4 126.63a11.43 11.43 0 0 1-2.1-22.65 40.9 40.9 0 0 0 30.5-30.6 11.4 11.4 0 1 1 22.27 4.87h.02a63.77 63.77 0 0 1-47.8 48.05v-.02a11.38 11.38 0 0 1-2.93.37z"
+								 fill="#007fc3" fill-opacity="1" />
+								<animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64" dur="1200ms" repeatCount="indefinite"></animateTransform>
+							</g>
+						</svg>
+					</div>
+				</div>
 			</div>
 	
-			<!-- search result-->
-			<div class="search-results">
-				<h5 class="search-sugestion-title">
-					Popular keywords
-				</h5>
-				<!--popular suggestions-->
-				<ul class="popular-suggestions">
-					<!-- CSR-->
-				</ul>
-			</div>
-			<div class="search-results">
-				<h5 class="search-sugestion-title">
-					Related keywords with
-					<strong class="current-keyword">&nbsp;</strong>
-					<div class="loader search-loader">
+			<!-- user comments-->
+			<ul class="user-comment-items">
+				<!-- csr-->
+			</ul>
+		</div>
+	
+	</div>
+
+	<!-- search overlay-->
+	<!--search view overay-->
+	<section class="component search-overlay" data-name="search-overlay">
+		<div class="search-overlay__bg"></div>
+	
+		<aside class="search__sidebar">
+	
+			<!-- search top(header + form)-->
+			<div class="search__row search__top">
+	
+				<h5 class="search__title">
+					Search image from Unsplash
+					<div class="loader search__loader">
 						<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 						 version="1.0" width="64px" height="64px" viewBox="0 0 128 128" xml:space="preserve">
 							<g>
@@ -226,12 +280,61 @@
 						</svg>
 					</div>
 				</h5>
-				<!--search related suggestions-->
-				<ul class="search-suggestions">
-					<!-- CSR-->
-				</ul>
+	
+				<form action="/search" id="search-form" autocomplete="off">
+					<!--search bar-->
+					<div class="ui-component ui-input search no-label" data-type="text" data-name="ui-input">
+						<a href="#" role="button" class="ui-btn--icon before">
+							<i class="material-icons">search</i>
+						</a>
+					
+						<input type="text"
+							id="image-search"
+							name="Search"
+							placeholder="Search images"
+							autocomplete="off"
+							value=""
+							>
+					
+						<label for="image-search">Search</label>
+					
+						<a href="#" role="button" class="ui-btn--icon after">
+							<i class="material-icons">close</i>
+						</a>
+					</div>
+				</form>
 			</div>
 	
+			<!-- search results-->
+			<div class="search__results">
+	
+				<!--popular suggestions-->
+				<div class="search__row">
+					<h5 class="search__title">
+						Popular keywords
+					</h5>
+					<ul class="popular-suggestions">
+						<!-- CSR-->
+					</ul>
+				</div>
+	
+				<!--search related suggestions-->
+				<div class="search__row">
+					<h5 class="search__title">
+						Related keywords with
+						<strong class="current-keyword">&nbsp;</strong>
+					</h5>
+					<ul class="search-suggestions">
+						<!-- CSR-->
+					</ul>
+				</div>
+	
+			</div>
+	
+			<!-- back button-->
+			<button class="ui-btn--icon search__back-btn">
+				<i class="material-icons">arrow_back</i>
+			</button>
 		</aside>
 	</section>
 
@@ -247,7 +350,7 @@
 		</div>
 	</div>
 
-	<!-- app bottom loader-->
+	<!-- bottom loader-->
 	<div class="loader app-loader">
 		<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 		 version="1.0" width="64px" height="64px" viewBox="0 0 128 128" xml:space="preserve">
@@ -259,8 +362,57 @@
 		</svg>
 	</div>
 
+	<!-- debug window-->
+	<div id="debug" class="debug"></div>
 
 	</main>
+
+	<!--intro password-->
+	<div class="intro" id="app-intro">
+		<div class="intro__inner">
+			<form action="/auto" id="intro-form" method="POST" autocomplete="off">
+				<fieldset>
+					<legend>Min's GUX</legend>
+					<div class="input-wrapper">
+						<!--ui input-->
+						<div class="ui-component ui-input small" data-type="text" data-name="ui-input">
+						
+							<input type="text"
+								id="user-name"
+								name="UserName"
+								placeholder="Your name"
+								autocomplete="off"
+								value=""
+								required>
+						
+							<label for="user-name">Name</label>
+						
+						</div>
+	
+						<!--ui input-->
+						<div class="ui-component ui-input small" data-type="text" data-name="ui-input">
+						
+							<input type="password"
+								id="password"
+								name="Password"
+								placeholder="password"
+								autocomplete="off"
+								value=""
+								required>
+						
+							<label for="password">Password</label>
+						
+						</div>
+	
+						<!--submit-->
+						<button class="ui-btn ui-btn--box" title="enter">
+							Go
+						</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
 
 	<!-- script -->
 	<script src="/scripts/dependencies-bundle.js" defer></script>
