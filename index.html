@@ -57,6 +57,11 @@
 					<span>Photos by</span>
 					<a class="ui-btn ui-btn--text small" href="https://unsplash.com/" target="_blank">Unsplash</a>
 				</div>
+	
+				<!-- hamburger-->
+				<button class="ui-btn--icon menu-btn js-menu-toggle">
+					<i class="material-icons">menu</i>
+				</button>
 			</div>
 			<div class="f-col center">
 				<span class="letter-masker ">
@@ -68,10 +73,12 @@
 				</span>
 			</div>
 			<div class="f-col right">
-				<!--close-->
+	
+				<!--close route-->
 				<a href="/" class="ui-btn--icon close-btn js-route" aria-label="header close button" aria-disabled="false" tabindex="0">
 					<i class="material-icons">close</i>
 				</a>
+	
 				<!--image search-->
 				<button class="ui-btn--icon search-btn js-search-toggle" title="header search trigger button">
 					<i class="material-icons">search</i>
@@ -274,21 +281,6 @@
 	
 			<!-- search top(header + form)-->
 			<div class="search__row search__top">
-	
-				<h5 class="search__title">
-					Search image from Unsplash
-					<div class="loader search__loader">
-						<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-						 version="1.0" width="64px" height="64px" viewBox="0 0 128 128" xml:space="preserve">
-							<g>
-								<path d="M75.4 126.63a11.43 11.43 0 0 1-2.1-22.65 40.9 40.9 0 0 0 30.5-30.6 11.4 11.4 0 1 1 22.27 4.87h.02a63.77 63.77 0 0 1-47.8 48.05v-.02a11.38 11.38 0 0 1-2.93.37z"
-								 fill="#007fc3" fill-opacity="1" />
-								<animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64" dur="1200ms" repeatCount="indefinite"></animateTransform>
-							</g>
-						</svg>
-					</div>
-				</h5>
-	
 				<form action="/search" id="search-form" autocomplete="off">
 					<!--search bar-->
 					<div class="ui-component ui-input search no-label" data-type="text" data-name="ui-input">
@@ -331,6 +323,16 @@
 					<h5 class="search__title">
 						Related keywords with
 						<strong class="current-keyword">&nbsp;</strong>
+						<div class="loader search__loader">
+							<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+							 version="1.0" width="64px" height="64px" viewBox="0 0 128 128" xml:space="preserve">
+								<g>
+									<path d="M75.4 126.63a11.43 11.43 0 0 1-2.1-22.65 40.9 40.9 0 0 0 30.5-30.6 11.4 11.4 0 1 1 22.27 4.87h.02a63.77 63.77 0 0 1-47.8 48.05v-.02a11.38 11.38 0 0 1-2.93.37z"
+									 fill="#007fc3" fill-opacity="1" />
+									<animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64" dur="1200ms" repeatCount="indefinite"></animateTransform>
+								</g>
+							</svg>
+						</div>
 					</h5>
 					<ul class="search-suggestions">
 						<!-- CSR-->
@@ -341,10 +343,53 @@
 	
 			<!-- back button-->
 			<button class="ui-btn--icon search__back-btn">
-				<i class="material-icons">keyboard_arrow_left</i>
+				<i class="material-icons">arrow_back</i>
 			</button>
 		</aside>
 	</section>
+
+	<!-- home menu-->
+	<!-- home menu + sidebar -->
+	<div class="component home-menu" data-name="home-menu">
+		<div class="home-menu__bg"></div>
+	
+		<aside class="home-menu__sidebar">
+	
+			<div class="row row--user-info">
+				<a class="ui-btn ui-btn--text js-route" href="/user/{userID}">
+					<div class="user-info">
+						<i class="material-icons">account_circle</i>
+						<span class="user-name">-</span>
+					</div>
+				</a>
+			</div>
+	
+			<div class="row row--collection">
+				<!-- user collection -->
+				<div class="user-collection-list">
+					<h3>My Collections</h3>
+					<p class="improvement-note">
+						<i class="material-icons">note</i>
+						As noted in the documentation for further UX improvements, selected link should naviate to
+						<code class="current-route"></code>
+						This routing + related view rendering is not a part of current version. The view should enable full editing in the detail.
+						<br>
+						For logined user -> full user profile view with proper authentication
+						<br>
+						For collection -> detail collection view to edit its information, removal of added items(image) in detail.
+					</p>
+					<ul class="ui-balloon__items user-collection__items">
+						<!-- CSR-->
+					</ul>
+				</div>
+			</div>
+	
+			<!-- back button-->
+			<button class="ui-btn--icon close-btn">
+				<i class="material-icons">arrow_forward</i>
+			</button>
+		</aside>
+	</div>
 
 	<!-- app modal-->
 	<div class="app-modal ">
