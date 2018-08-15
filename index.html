@@ -20,7 +20,7 @@
 
 	<meta name="title" content="this is google exercise project for min yang">
 	<meta name="keywords" content="google, uxe">
-	<meta name="description" content="TODO">
+	<meta name="description" content="GUXE photo gallery exercise.">
 
 	<meta property="og:site_name" content="">
 	<meta property="og:title" content="this is google exercise project for min yang">
@@ -28,12 +28,12 @@
 	<meta property="og:locale" content="en-US">
 	<meta property="og:url" content="">
 	<meta property="og:image" content="">
-	<meta property="og:description" content="TODO">
+	<meta property="og:description" content="GUXE photo gallery exercise.">
 
 	<meta name="twitter:card" content="" />
 	<meta name="twitter:site" content="" />
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:description" content="" />
+	<meta name="twitter:title" content="this is google exercise project for min yang" />
+	<meta name="twitter:description" content="GUXE photo gallery exercise." />
 	<meta name="twitter:image" content="" />
 
 	<!-- google icons-->
@@ -164,18 +164,6 @@
 							</div>
 	
 						</form>
-	
-						<!-- ui-loader-->
-						<div class="loader user-collection__loader">
-							<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-							 version="1.0" width="64px" height="64px" viewBox="0 0 128 128" xml:space="preserve">
-								<g>
-									<path d="M75.4 126.63a11.43 11.43 0 0 1-2.1-22.65 40.9 40.9 0 0 0 30.5-30.6 11.4 11.4 0 1 1 22.27 4.87h.02a63.77 63.77 0 0 1-47.8 48.05v-.02a11.38 11.38 0 0 1-2.93.37z"
-									 fill="#007fc3" fill-opacity="1" />
-									<animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64" dur="1200ms" repeatCount="indefinite"></animateTransform>
-								</g>
-							</svg>
-						</div>
 					</div>
 	
 					<ul class="ui-balloon__items user-collection__items">
@@ -189,13 +177,23 @@
 				</div>
 			</div>
 	
-			<!--back-->
-			<button class="ui-btn--icon back-btn" title="user collection back">
-				<i class="material-icons">keyboard_arrow_left</i>
+			<!--close-->
+			<button class="ui-btn--icon close-btn" title="user collection close">
+				<i class="material-icons">close</i>
 			</button>
+	
+			<!-- ui-loader-->
+			<div class="loader user-collection__loader">
+				<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				 version="1.0" width="64px" height="64px" viewBox="0 0 128 128" xml:space="preserve">
+					<g>
+						<path d="M75.4 126.63a11.43 11.43 0 0 1-2.1-22.65 40.9 40.9 0 0 0 30.5-30.6 11.4 11.4 0 1 1 22.27 4.87h.02a63.77 63.77 0 0 1-47.8 48.05v-.02a11.38 11.38 0 0 1-2.93.37z"
+						 fill="#007fc3" fill-opacity="1" />
+						<animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64" dur="1200ms" repeatCount="indefinite"></animateTransform>
+					</g>
+				</svg>
+			</div>
 		</div>
-	
-	
 	</div>
 
 	<!-- user comment -->
@@ -234,24 +232,29 @@
 				<!-- buttons -->
 				<div class="ui-wrapper">
 					<button class="ui-btn ui-btn--text small js-show-comments" title="view more comments">
-						View&nbsp;
-						<span class="total-comments">6</span>&nbsp;comments
+						View&nbsp;<span class="total-comments">6</span>&nbsp;comments
 					</button>
 					<button href="#" class="ui-btn ui-btn--text small js-hide-comments" title="view more comments">
 						Hide comments
 					</button>
-					<!-- ui-loader-->
-					<div class="loader user-collection__loader">
-						<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-						 version="1.0" width="64px" height="64px" viewBox="0 0 128 128" xml:space="preserve">
-							<g>
-								<path d="M75.4 126.63a11.43 11.43 0 0 1-2.1-22.65 40.9 40.9 0 0 0 30.5-30.6 11.4 11.4 0 1 1 22.27 4.87h.02a63.77 63.77 0 0 1-47.8 48.05v-.02a11.38 11.38 0 0 1-2.93.37z"
-								 fill="#007fc3" fill-opacity="1" />
-								<animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64" dur="1200ms" repeatCount="indefinite"></animateTransform>
-							</g>
-						</svg>
-					</div>
 				</div>
+	
+				<!-- ui-loader-->
+				<div class="loader user-collection__loader">
+					<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					 version="1.0" width="64px" height="64px" viewBox="0 0 128 128" xml:space="preserve">
+						<g>
+							<path d="M75.4 126.63a11.43 11.43 0 0 1-2.1-22.65 40.9 40.9 0 0 0 30.5-30.6 11.4 11.4 0 1 1 22.27 4.87h.02a63.77 63.77 0 0 1-47.8 48.05v-.02a11.38 11.38 0 0 1-2.93.37z"
+							 fill="#007fc3" fill-opacity="1" />
+							<animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64" dur="1200ms" repeatCount="indefinite"></animateTransform>
+						</g>
+					</svg>
+				</div>
+	
+				<!--close-->
+				<button class="ui-btn--icon close-btn" title="user comment close">
+					<i class="material-icons">close</i>
+				</button>
 			</div>
 	
 			<!-- user comments-->
