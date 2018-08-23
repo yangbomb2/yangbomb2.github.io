@@ -55,57 +55,13 @@
 
 		<section class="view__top f-col full-width">
 			<h1>UI components</h1>
-			<h3>todo</h3>
-			<p>todo</p>
-		</section>
-
-		<!-- Category & Tags -->
-		<section class="f-col">
-			<h4>Tags</h4>
-
-			<div class="ui-wrapper">
-				<span class="ui-tag ">tag</span>
-				<span class="ui-tag red">red</span>
-				<span class="ui-tag blue">blue</span>
-				<span class="ui-tag teal">teal</span>
-				<span class="ui-tag yellow">yellow</span>
-			</div>
-
-		</section>
-
-		<!-- UI Button -->
-		<section class="f-col">
-			<h4>Default button</h4>
-
-			<div class="ui-wrapper">
-
-				<button class="ui-btn ui-btn--text">
-					<i class="material-icons">zoom_in</i>
-					text button
-				</button>
-
-				<a class="ui-btn ui-btn--text" href="#" aria-label="text button test" aria-disabled="false" tabindex="0">
-					default CTA
-					<i class="material-icons">arrow_forward</i>
-				</a>
-
-			</div>
-		</section>
-
-		<!-- UI Box Button -->
-		<section class="f-col">
-			<h4>Box Button</h4>
-			<div class="ui-wrapper">
-
-				<button class="ui-btn ui-btn--box">ui box button</button>
-				<a href="#" class="ui-btn ui-btn--box" aria-label="" aria-disabled="false" tabindex="0">ui box button(link)</a>
-
-			</div>
+			<h3>ver 1.0.0</h3>
+			<p>This is UI components example that I used for GUXE exercise. I'd like to work on this level of elements that are going to be used throughout the project first.</p>
 		</section>
 
 		<!-- UI Icon Button -->
 		<section class="f-col">
-			<h4>UI Icon button(+ icon font)</h4>
+			<h4 class="group-tap">UI Icon button (+svg)</h4>
 
 			<div class="ui-wrapper">
 
@@ -121,24 +77,6 @@
 					<span class="ui-btn-label">menu</span>
 				</button>
 
-				<!--play-->
-				<button class="ui-btn--icon">
-					<i class="material-icons">play_arrow</i>
-					<span class="ui-btn-label">play</span>
-				</button>
-
-				<!--pause-->
-				<button class="ui-btn--icon">
-					<i class="material-icons">pause</i>
-					<span class="ui-btn-label">pause</span>
-				</button>
-
-				<!--favorite-->
-				<button class="ui-btn--icon">
-					<i class="material-icons">favorite</i>
-					<span class="ui-btn-label">favorite</span>
-				</button>
-
 				<!--message/comment-->
 				<button class="ui-btn--icon">
 					<i class="material-icons">message</i>
@@ -151,22 +89,19 @@
 					<span class="ui-btn-label">add</span>
 				</button>
 
+					<!--add-->
+				<button class="ui-btn--icon">
+					<i class="material-icons">info</i>
+					<span class="ui-btn-label">info</span>
+				</button>
+
 				<!--inactive-->
 				<button class="ui-btn--icon inactive">
 					<i class="material-icons">pause</i>
-					<span class="ui-btn-label">pause</span>
+					<span class="ui-btn-label">inactive</span>
 				</button>
 
-			</div>
-
-		</section>
-
-		<!-- UI Icon Button + SVG -->
-		<section class="f-col">
-			<h4>UI icon button(+ svg)</h4>
-
-			<div class="ui-wrapper">
-
+				<!-- SVG-->
 				<!--play-pause(default) -->
 				<button class="ui-btn--icon svg">
 					<div class="svg-sprite" style="background-image:url(../assets/images/ui/play-to-pause.svg);"></div>
@@ -193,14 +128,57 @@
 					<span class="ui-btn-label">unfavorite</span>
 				</button>
 
-
 			</div>
 
 		</section>
 
+		<!-- Category & Tags -->
+		<section class="f-col half">
+			<h4 class="group-tap">Tags</h4>
+
+			<div class="ui-wrapper">
+				<span class="ui-tag ">tag</span>
+				<span class="ui-tag red">red</span>
+				<span class="ui-tag blue">blue</span>
+				<span class="ui-tag teal">teal</span>
+				<span class="ui-tag yellow">yellow</span>
+			</div>
+
+		</section>
+
+		<!-- UI Button -->
+		<section class="f-col half">
+			<h4 class="group-tap">Default button</h4>
+
+			<div class="ui-wrapper">
+
+				<button class="ui-btn ui-btn--text">
+					<i class="material-icons">zoom_in</i>
+					text button
+				</button>
+
+				<a class="ui-btn ui-btn--text" href="#" aria-label="text button test" aria-disabled="false" tabindex="0">
+					default CTA
+					<i class="material-icons">arrow_forward</i>
+				</a>
+
+			</div>
+		</section>
+
+		<!-- UI Box Button -->
+		<section class="f-col half">
+			<h4 class="group-tap">Box Button</h4>
+			<div class="ui-wrapper">
+
+				<button class="ui-btn ui-btn--box">Load more</button>
+				<a href="#" class="ui-btn ui-btn--box" aria-label="" aria-disabled="false" tabindex="0">ui box button(link)</a>
+
+			</div>
+		</section>
+
 		<!-- UI Balloon -->
-		<section class="f-col">
-			<h4>UI Balloon</h4>
+		<section class="f-col half">
+			<h4 class="group-tap">UI Balloon</h4>
 
 			<div class="ui-wrapper">
 				<!-- UI dropdown -->
@@ -209,7 +187,7 @@
 							<!-- This part is for iteration -->
 							<li class="ui-balloon__item" data-id="0" data-label="Share on facebook">
 				
-								<a class="ui-btn ui-btn--text small" href="" target=""  aria-label="Share on facebook" aria-disabled="false"
+								<a class="ui-btn ui-btn--text " href="" target=""  aria-label="Share on facebook" aria-disabled="false"
 								 tabindex="0">
 										Share on facebook
 										
@@ -219,7 +197,7 @@
 							<!-- This part is for iteration -->
 							<li class="ui-balloon__item" data-id="1" data-label="Tweet">
 				
-								<a class="ui-btn ui-btn--text small" href="" target=""  aria-label="Tweet" aria-disabled="false"
+								<a class="ui-btn ui-btn--text " href="" target=""  aria-label="Tweet" aria-disabled="false"
 								 tabindex="0">
 										Tweet
 										
@@ -229,7 +207,7 @@
 							<!-- This part is for iteration -->
 							<li class="ui-balloon__item" data-id="2" data-label="Download">
 				
-								<a class="ui-btn ui-btn--text small" href="" target=""  aria-label="Download" aria-disabled="false"
+								<a class="ui-btn ui-btn--text " href="" target=""  aria-label="Download" aria-disabled="false"
 								 tabindex="0">
 										Download
 										<i class="material-icons">arrow_downward</i>
@@ -242,21 +220,21 @@
 				<div class="ui-component ui-balloon down" data-name="ui-balloon">
 					<ul class="ui-balloon__items">
 							<!-- This part is for iteration -->
-							<li class="ui-balloon__item" data-id="0" data-label="Normal link1">
+							<li class="ui-balloon__item" data-id="0" data-label="small link1">
 				
-								<a class="ui-btn ui-btn--text small" href="" target=""  aria-label="Normal link1" aria-disabled="false"
+								<a class="ui-btn ui-btn--text small" href="" target=""  aria-label="small link1" aria-disabled="false"
 								 tabindex="0">
-										Normal link1
+										small link1
 										
 								</a>
 				
 							</li>
 							<!-- This part is for iteration -->
-							<li class="ui-balloon__item" data-id="1" data-label="Normal link2">
+							<li class="ui-balloon__item" data-id="1" data-label="small link2">
 				
-								<a class="ui-btn ui-btn--text small" href="" target=""  aria-label="Normal link2" aria-disabled="false"
+								<a class="ui-btn ui-btn--text small" href="" target=""  aria-label="small link2" aria-disabled="false"
 								 tabindex="0">
-										Normal link2
+										small link2
 										
 								</a>
 				
@@ -268,16 +246,17 @@
 
 		</section>
 
-		<!-- Input UI (text) -->
+		<!-- Input UI -->
 		<section class="f-col">
-			<h4>UI Input text</h4>
+			<h4 class="group-tap">UI Inputs</h4>
 			<div class="ui-wrapper">
+				<!-- text input-->
 				<div class="ui-component ui-input " data-type="text" data-name="ui-input">
 				
-					<input type=""
+					<input type="text"
 						id="test-input"
 						name="Comment"
-						placeholder="-"
+						placeholder="text input"
 						autocomplete=""
 						value=""
 						>
@@ -286,13 +265,43 @@
 				
 				</div>
 
+				<!-- number input-->
+				<div class="ui-component ui-input " data-type="text" data-name="ui-input">
+				
+					<input type="number"
+						id="test-number-input"
+						name="Number"
+						placeholder="12345679"
+						autocomplete=""
+						value=""
+						>
+				
+					<label for="test-number-input">Numbers</label>
+				
+				</div>
+
+				<!-- email input-->
+				<div class="ui-component ui-input " data-type="text" data-name="ui-input">
+				
+					<input type="email"
+						id="test-email-input"
+						name="Email"
+						placeholder="kyang@vertic.com"
+						autocomplete=""
+						value=""
+						>
+				
+					<label for="test-email-input">Email</label>
+				
+				</div>
+
 				<!--search-->
-				<div class="ui-component ui-input search" data-type="text" data-name="ui-input">
+				<div class="ui-component ui-input search has-icon" data-type="text" data-name="ui-input">
 					<a href="#" role="button" class="ui-btn--icon before">
 						<i class="material-icons">search</i>
 					</a>
 				
-					<input type=""
+					<input type="search"
 						id="image-search"
 						name="Search"
 						placeholder="search image"
@@ -310,9 +319,9 @@
 			</div>
 		</section>
 
-		<!-- Dots UI -->
-		<section class="f-col">
-			<h4>UI Dots</h4>
+		<!-- UI Dot -->
+		<section class="f-col half">
+			<h4 class="group-tap">UI Dots</h4>
 			<div class="ui-wrapper">
 				<div class="ui-component ui-dots" data-name="ui-dots">
 					<!-- Runtime rendering -->
@@ -324,59 +333,38 @@
 		</section>
 
 		<!-- Pagination UI(dynamic)-->
-		<section class="f-col">
-			<h4>UI Pagination</h4>
+		<section class="f-col half">
+			<h4 class="group-tap">UI Pagination</h4>
 			<div class="ui-wrapper">
-				<div class="ui-component ui-pagination "
-					data-total-length="10"
-					data-name="ui-pagination">
+				<div class="ui-component ui-pager "
+					data-current-id="00"
+					data-total-length="999"
+					data-add-empty-zero="true",
+					data-name="ui-pager">
 				
-					<button class="ui-btn ui-pagination-btn">
-						<i class="icon-down-arrow"></i>
+					<button class="ui-btn--icon ui-pagination__btn">
+						<i class="material-icons">arrow_back</i>
 					</button>
 				
-					<span class="ui-pagination__count">
-						<span class="ui-pagination__curr">0</span> of
-						<span class="ui-pagination__total">10</span>
+					<span class="ui-pager__count">
+						<span class="ui-pagination__curr">00</span>&nbsp;/&nbsp;<span class="ui-pagination__total">999</span>
 					</span>
 				
-					<button class="ui-btn ui-pagination-btn">
-						<i class="icon-down-arrow"></i>
+					<button class="ui-btn--icon ui-pagination__btn">
+						<i class="material-icons">arrow_forward</i>
 					</button>
-				
-				</div>
-
-				<div class="ui-component ui-pagination no-js is-static" data-total-length="" data-is-static="true" data-name="ui-pagination">
-
-					<a href="/?page=0" class="ui-btn ui-pagination__btn">
-						<i></i>
-					</a>
-
-					<span class="ui-pagination__count">
-						<a href="/?page=1" class="ui-pagination__index active">1</a>
-						<a href="/?page=2" class="ui-pagination__index">2</a>
-						<a href="/?page=3" class="ui-pagination__index">3</a>
-						<a href="/?page=4" class="ui-pagination__index">4</a>
-						<a href="/?page=5" class="ui-pagination__index">5</a>
-						<a href="/?page=6" class="ui-pagination__index">6</a>
-						<a href="/?page=7" class="ui-pagination__index">7</a>
-					</span>
-
-					<a href="/?page=8" class="ui-btn ui-pagination__btn">
-						<i></i>
-					</a>
-
 				</div>
 			</div>
 		</section>
 
 		<!-- Pagination UI(static) -->
-		<section class="f-col">
+		<section class="f-col half">
 		</section>
 
 	</div>
 
 </section>
+
 	</main>
 
 	<!--intro password-->
