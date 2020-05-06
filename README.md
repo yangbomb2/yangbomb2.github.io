@@ -1,2 +1,2 @@
 # yangbomb2.github.io
-Githup page
+Splash image + simple app demo
